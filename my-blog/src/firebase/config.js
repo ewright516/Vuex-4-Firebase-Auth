@@ -1,19 +1,19 @@
-import { initializeApp } from 'firebase/app'
-import { getAuth } from 'firebase/auth'
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC85GJtRghlHVzTvnslFM5LQrwZ95M_0QE",
-  authDomain: "vuex-firebase-auth-56704.firebaseapp.com",
-  projectId: "vuex-firebase-auth-56704",
-  storageBucket: "vuex-firebase-auth-56704.appspot.com",
-  messagingSenderId: "345007795658",
-  appId: "1:345007795658:web:7d7ad30b26830b8ce9f333"
-}
+  apiKey: "AIzaSyBT1OwclXLfuSgSzEs3bjzg16xEDBCQD84",
+  authDomain: "vuex-firebase-tutorial-5009d.firebaseapp.com",
+  projectId: "vuex-firebase-tutorial-5009d",
+  storageBucket: "vuex-firebase-tutorial-5009d.appspot.com",
+  messagingSenderId: "978057332570",
+  appId: "1:978057332570:web:4907bfac265f932e4b5563",
+};
 
 // init firebase
-initializeApp(firebaseConfig)
+initializeApp(firebaseConfig);
 
 // init firebase auth
-const auth = getAuth()
+const auth = getAuth();
 
-export { auth }
+export { auth };

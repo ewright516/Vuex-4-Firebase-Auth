@@ -1,26 +1,27 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
 
 const store = createStore({
   state: {
-    user: null
+    user: null,
   },
   mutations: {
+    // everything in mutations has to be sychronous
     setUser(state, payload) {
-      state.user = payload
-      console.log('user state changed:', state.user)
-    }
+      state.user = payload;
+      console.log("user state changed:", state.user);
+    },
   },
   actions: {
     signup(context, { email, password }) {
-      console.log('signup action')
+      console.log("signup action");
 
       // async code
       setTimeout(() => {
-        context.commit('setUser', { email, password })
-      }, 2000)
-    }
-  }
-})
+        context.commit("setUser", { email, password });
+      }, 2000);
+    },
+  },
+});
 
 // export the store
-export default store
+export default store;
